@@ -18,10 +18,12 @@ export default function Editor(props) {
 
     const [open, setOpen] = useState(true)
 
+
     function handleChange(editor,data,value){
         onChange(value)
     }
 
+    
     return (
         <div className={`editor-container ${open ? '' : 'collapsed'}`}>
             <div className="editor-title">
